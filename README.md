@@ -1,9 +1,20 @@
-# {{ project_name }}
+# p5-js-playground-cookiecutter
 
-Cookiecutter template for a playground p5.js project which uses a Typescript module-based structure.
+This repo contains a cookiecutter template for creating a playground p5.js project which uses a Typescript module-based structure.
 
-Main sketch code is in `public/sketch.js`, rendered in `public/index.html`. Typescript modules can be added in the
-`public/` folder.
+# Installation
+
+To install the `cookiecutter` library to build thsi template, run the following command on your local system:
+
+```sh
+pip install cookiecutter
+```
+
+To use this cookiecutter repo to build out your playground, run the following command:
+
+```sh
+cookiecutter https://github.com/dsillman2000/p5-js-playground-cookiecutter.git
+```
 
 # Dev setup
 
@@ -26,4 +37,4 @@ from which they can be referenced in imports in the sketch code.
 
 Author:
 
-- {{ author }}
+- David Sillman <dsillman2000@gmail.com>

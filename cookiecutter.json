@@ -1,6 +1,6 @@
 {
-    "project_slug": "p5-js-playground",
     "project_name": "p5.js Playground",
-    "author": "",
+    "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+    "author": "Firstname Lastname",
     "p5_version": "1.4.0"
 }
