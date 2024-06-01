@@ -1,0 +1,39 @@
+{
+  "name": "{{project_slug}}",
+  "version": "1.0.0",
+  "description": "{{project_name}}",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "{{author}}",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.2",
+    "ts-node": "^10.9.2",
+    "@types/node": "20.0.0"
+  },
+  "files": [
+    "server.js",
+    "tsconfig.json",
+    "public"
+  ],
+  "nodemonConfig": {
+    "watch": [
+      "./public/**",
+      "./server.js"
+    ],
+    "ignore": [
+      "./public/js/*.js"
+    ],
+    "ext": "js,ts,json",
+    "exec": "tsc -p . && node server.js || exit 1"
+  }
+}
